@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Intro component with sign up form</title>
 </head>
+
 <body>
+  <div class="headings-container">
+    <h1 class="heading">Learn to code by watching others</h1>
+    <p class="sub-heading">See how experienced developers solve problems in real-time. Watching scripted tutorials is
+      great,
+      but understanding how developers think is invaluable.</p>
+  </div>
 
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <div class="form-banner-container">
+    <div class="banner">
+      <p>Try it free 7 days <span>then $20/mo. thereafter</span></p>
+    </div>
+    <form action="">
+      <div class="input-container">
+        <img src="./images/icon-error.svg" class="error-icon" alt="">
+        <input type="text" name="first name" id="first-name" placeholder="First Name" required=''>
+        <p class="error-message">First Name cannot be empty</p>
+      </div>
+      <div class="input-container">
+        <img src="./images/icon-error.svg" class="error-icon" alt="">
+        <input type="text" name="last name" id="last-name" placeholder="Last Name" required=''>
+        <p class="error-message">Last Name cannot be empty</p>
+      </div>
+      <div class="input-container">
+        <img src="./images/icon-error.svg" class="error-icon" alt="">
+        <input type="email" name="email address" id="email-address" placeholder="Email Address" required=''>
+        <p class="error-message">Email Address cannot be empty</p>
+        <p class="email-error">Looks like this is not an email</p>
+      </div>
+      <div class="input-container">
+        <img src="./images/icon-error.svg" class="error-icon" alt="">
+        <input type="password" name="password" id="password" placeholder="Password" required=''>
+        <p class="error-message">Password cannot be empty</p>
+      </div>
+        <button>CLAIM YOUR FREE TRIAL</button>
+      <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    </form>
+  </div>
+  <script src="./script.js"></script>
 </body>
+
 </html>
